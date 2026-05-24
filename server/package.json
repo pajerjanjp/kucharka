@@ -1,0 +1,16 @@
+{
+  "name": "kucharka-backend",
+  "version": "1.0.0",
+  "description": "Backend pro aplikaci Kuchařka v Express.js se souborovým uložištěm.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "express": "^4.21.2"
+  }
+}

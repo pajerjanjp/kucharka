@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1f1f1f;
+  background: #f5f5f5;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #222;
+  background: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #eee;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid #222;
+  background: white;
+}
+
+.brand {
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  background: transparent;
+}
+
+nav {
+  display: flex;
+  gap: 8px;
+}
+
+.container {
+  width: min(1000px, calc(100% - 32px));
+  margin: 24px auto;
+}
+
+.page-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.filter,
+.form,
+.detail,
+.card {
+  border: 1px solid #222;
+  background: white;
+  border-radius: 6px;
+}
+
+.filter {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto auto;
+  gap: 12px;
+  padding: 16px;
+  margin: 16px 0;
+  align-items: end;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #222;
+  border-radius: 4px;
+  padding: 8px;
+  background: white;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.list {
+  display: grid;
+  gap: 12px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  align-items: center;
+}
+
+.card h2,
+.detail h1 {
+  margin-top: 0;
+}
+
+.detail,
+.form {
+  padding: 24px;
+}
+
+.form {
+  display: grid;
+  gap: 16px;
+}
+
+.ingredient-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 8px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.error {
+  color: #b00020;
+  font-weight: bold;
+}
+
+.danger {
+  border-color: #b00020;
+  color: #b00020;
+}
+
+.steps {
+  white-space: pre-wrap;
+}
+
+@media (max-width: 760px) {
+  .filter,
+  .ingredient-row {
+    grid-template-columns: 1fr;
+  }
+
+  .card,
+  .topbar,
+  .page-heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
+
+.inline-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: end;
+  border: 1px solid #222;
+  background: white;
+  border-radius: 6px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+@media (max-width: 760px) {
+  .inline-form {
+    grid-template-columns: 1fr;
+  }
+}

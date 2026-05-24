@@ -1,0 +1,31 @@
+[
+  {
+    "id": "rec-rizoto",
+    "name": "Kuřecí rizoto",
+    "description": "Jednoduché hlavní jídlo s rýží a kuřecím masem.",
+    "preparationSteps": "Nakrájejte cibuli. Orestujte maso. Přidejte rýži a podlijte vodou. Vařte do změknutí.",
+    "rating": 4.5,
+    "ingredientList": [
+      {
+        "ingredientId": "4f8a5c958ef486f42224943e757091d",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "7c91b2a44e8d4f11a92c6b0fd3185e77",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "a63f19c7d4824f6e9b05c2a8e7d31490",
+        "amount": 1,
+        "unit": "ks"
+      },
+      {
+        "ingredientId": "d5b7e21f9c304a6b8f12e4c0a93d7b65",
+        "amount": 2,
+        "unit": "lžíce"
+      }
+    ]
+  }
+]
